@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  ImageFeed
-//
-//  Created by Dmitry Rodionov on 29.04.2023.
-//
-
 import UIKit
 
 class ImagesListViewController: UIViewController {
@@ -40,13 +33,13 @@ extension ImagesListViewController: UITableViewDelegate {
 
 extension ImagesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return photosName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
-            withIdentifier: ImagesListCell.reuseIdentifier
-            , for: indexPath
+            withIdentifier: ImagesListCell.reuseIdentifier,
+            for: indexPath
         )
         guard let imageListCell = cell as? ImagesListCell else {
             print("ImageListCell is nil.")
@@ -57,6 +50,4 @@ extension ImagesListViewController: UITableViewDataSource {
         
         return imageListCell
     }
-    
-    
 }
