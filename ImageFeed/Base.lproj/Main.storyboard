@@ -43,6 +43,9 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="GradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HSc-OJ-Zib">
+                                                    <rect key="frame" x="16" y="148" width="329" height="30"/>
+                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" id="ZnF-vP-FT4" userLabel="Like Button">
                                                     <rect key="frame" x="301" y="4" width="44" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,9 +66,12 @@
                                                 <constraint firstItem="ZnI-87-Trg" firstAttribute="top" secondItem="cMP-lG-lFg" secondAttribute="top" constant="4" id="ILA-nK-r4t"/>
                                                 <constraint firstItem="ZnI-87-Trg" firstAttribute="trailing" secondItem="ZnF-vP-FT4" secondAttribute="trailing" id="Q5D-N3-FaO"/>
                                                 <constraint firstAttribute="trailing" secondItem="ZnI-87-Trg" secondAttribute="trailing" constant="16" id="Xjb-EL-T1d"/>
+                                                <constraint firstItem="ZnI-87-Trg" firstAttribute="bottom" secondItem="HSc-OJ-Zib" secondAttribute="bottom" id="Z7x-5n-iZu"/>
                                                 <constraint firstAttribute="bottom" secondItem="ZnI-87-Trg" secondAttribute="bottom" constant="4" id="iWz-We-cBH"/>
+                                                <constraint firstItem="ZnI-87-Trg" firstAttribute="trailing" secondItem="HSc-OJ-Zib" secondAttribute="trailing" id="kEn-pI-kea"/>
                                                 <constraint firstItem="Dx8-BT-NDF" firstAttribute="leading" secondItem="ZnI-87-Trg" secondAttribute="leading" constant="8" id="qE7-wn-YjM"/>
                                                 <constraint firstItem="ZnI-87-Trg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dx8-BT-NDF" secondAttribute="trailing" constant="8" id="qK2-e7-Fq8"/>
+                                                <constraint firstItem="HSc-OJ-Zib" firstAttribute="leading" secondItem="ZnI-87-Trg" secondAttribute="leading" id="yRE-4X-drb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -99,6 +105,7 @@
     <resources>
         <image name="0" width="200" height="132"/>
         <image name="FavoritesActive" width="30" height="28"/>
+        <image name="GradientBackground" width="343" height="30"/>
         <namedColor name="YP Black">
             <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
