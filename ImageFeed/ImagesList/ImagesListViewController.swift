@@ -26,7 +26,7 @@ class ImagesListViewController: UIViewController {
         }
         
         let isActive = indexPath.row % 2 == 0
-        let favoritesImage = isActive ? UIImage(named: "FavoritesActive") : UIImage(named: "FavoritesNoActive")
+        let favoritesImage = isActive ? UIImage(named: "FavoritActive") : UIImage(named: "FavoritNoActive")
         
         let currentDate = dateFormatter.string(from: Date())
         
