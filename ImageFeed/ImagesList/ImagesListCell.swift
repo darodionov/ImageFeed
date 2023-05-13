@@ -11,5 +11,4 @@ final class ImagesListCell: UITableViewCell {
         super.awakeFromNib()
         print("awakeFromNib called \(String(describing: cellImage))")
     }
-
 }

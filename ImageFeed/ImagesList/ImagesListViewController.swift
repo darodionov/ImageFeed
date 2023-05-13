@@ -4,13 +4,18 @@ class ImagesListViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
     private let photosName: [String] = Array(0..<20).map({"\($0)"})
+    private lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        return formatter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource  = self
         tableView.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
-        tableView.register(ImagesListCell.self, forCellReuseIdentifier: ImagesListCell.reuseIdentifier)
     }
     
     func configCell(for cell: ImagesListCell, with indexPath: IndexPath) {
@@ -20,7 +25,14 @@ class ImagesListViewController: UIViewController {
             return
         }
         
+        let isActive = indexPath.row % 2 == 0
+        let favoritesImage = isActive ? UIImage(named: "FavoritActive") : UIImage(named: "FavoritNoActive")
+        
+        let currentDate = dateFormatter.string(from: Date())
+        
         cell.cellImage.image = image
+        cell.likeButton.setImage(favoritesImage, for: .normal)
+        cell.dateLabel.text = currentDate
     }
     
 }
@@ -39,8 +51,8 @@ extension ImagesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: ImagesListCell.reuseIdentifier,
-            for: indexPath
-        )
+            for: indexPath)
+        
         guard let imageListCell = cell as? ImagesListCell else {
             print("ImageListCell is nil.")
             return UITableViewCell()
