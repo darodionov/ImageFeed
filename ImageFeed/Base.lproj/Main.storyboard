@@ -180,7 +180,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmb-P5-y2G">
-                                <rect key="frame" x="288" y="771" width="51" height="51"/>
+                                <rect key="frame" x="171" y="771" width="51" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="Ets-DB-0gW"/>
                                     <constraint firstAttribute="height" constant="51" id="Xf5-B8-ysN"/>
@@ -197,9 +197,9 @@
                         <constraints>
                             <constraint firstItem="u4X-qb-Jdw" firstAttribute="bottom" secondItem="kmb-P5-y2G" secondAttribute="bottom" constant="30" id="B5r-To-cmW"/>
                             <constraint firstItem="0b6-p7-y4B" firstAttribute="top" secondItem="u4X-qb-Jdw" secondAttribute="top" id="Cvb-6Z-UOq"/>
-                            <constraint firstItem="u4X-qb-Jdw" firstAttribute="trailing" secondItem="kmb-P5-y2G" secondAttribute="trailing" constant="54" id="GxE-BH-ZDj"/>
                             <constraint firstItem="0b6-p7-y4B" firstAttribute="trailing" secondItem="u4X-qb-Jdw" secondAttribute="trailing" id="Lzu-JY-iur"/>
                             <constraint firstItem="0b6-p7-y4B" firstAttribute="bottom" secondItem="u4X-qb-Jdw" secondAttribute="bottom" id="N8f-Ge-Hqk"/>
+                            <constraint firstItem="kmb-P5-y2G" firstAttribute="centerX" secondItem="hYR-Vk-lxP" secondAttribute="centerX" id="ZLL-bW-sIG"/>
                             <constraint firstItem="8mc-a6-cQS" firstAttribute="leading" secondItem="u4X-qb-Jdw" secondAttribute="leading" constant="4" id="df6-33-8nb"/>
                             <constraint firstItem="0b6-p7-y4B" firstAttribute="top" secondItem="hYR-Vk-lxP" secondAttribute="top" id="e8h-bn-saJ"/>
                             <constraint firstItem="0b6-p7-y4B" firstAttribute="leading" secondItem="u4X-qb-Jdw" secondAttribute="leading" id="fbH-Fi-DvZ"/>
