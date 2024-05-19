@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-214.50381679389312" y="-1201.4084507042255"/>
+            <point key="canvasLocation" x="-1095" y="-1207"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RCc-2q-du9">
@@ -119,8 +119,8 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="Eek-rO-6b5" kind="relationship" relationship="viewControllers" id="1wM-Dp-amJ"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ECn-S6-xwf"/>
+                        <segue destination="Eek-rO-6b5" kind="relationship" relationship="viewControllers" id="1wM-Dp-amJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aK-hL-zUT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PgS-JV-ALI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1120" y="-542"/>
+            <point key="canvasLocation" x="-1095" y="-462"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="Sh1-UQ-w1u">
@@ -218,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSb-s9-Ca4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215" y="-333"/>
+            <point key="canvasLocation" x="-242" y="-472"/>
         </scene>
     </scenes>
     <resources>
