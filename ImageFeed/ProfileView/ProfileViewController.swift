@@ -4,11 +4,9 @@ final class ProfileViewController: UIViewController {
     var profileImageView: UIImageView?
     
     override func viewDidLoad() {
-        print("!!!!!!!!!!")
         setProfileImageView()
         setExitButton()
         setLabels()
-        
     }
     
     private func setProfileImageView() {
@@ -68,9 +66,11 @@ final class ProfileViewController: UIViewController {
         descriptionLabel.textColor = UIColor(named: "YP White (iOS)")
         
         if let profileImageView = profileImageView {
-            nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8).isActive = true
+            nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor,
+                                           constant: 8).isActive = true
         } else {
-            nameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: (76 + 70 + 8)).isActive = true
+            nameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
+                                           constant: (76 + 70 + 8)).isActive = true
         }
         
         NSLayoutConstraint.activate([
